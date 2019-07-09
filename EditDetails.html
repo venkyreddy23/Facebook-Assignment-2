@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Edit Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul class="facebook" role="navigation">
+            <li><a href="#"> <img src="facebook-icon.svg" alt="facebookdp" style="width: 40px;height:40px;"> </a></li>
+            <li class="facebook__search">
+                <form class="form-inline">
+                    <div class="input-group">
+                        <input type="text" class="form-control input-sm " placeholder="Search" name="search">
+                        <div class="input-group-btn prepend">
+                            <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </li>
+            <li><a href="#"> <img src="vdp.jpg" alt="facebookdp" style="width: 30px;height:30px;border-radius: 50%;">
+                </a></li>
+            <li>Home</li>
+            <li>Create</li>
+            <li>Notifications</li>
+            <li><i class="fa fa-caret-down"></i>More</li>
+            <li><a href=""><input type="button" value="logout"></a></li>
+            <li><a href=""><input type="button" value="Activity log"></a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="fb-profile-block">
+                    <div class="fb-profile-block-thumb cover-container"></div>
+                    <div class="profile-img">
+                        <a href="#">
+                            <img src="vdp.jpg" alt="dp" title="pfofilepic">
+                        </a>
+                    </div>
+                    <div class="profile-name">
+                        <h2>MR VENKY REDDY</h2>
+                    </div>
+
+                    <div class="fb-profile-block-menu">
+                        <div class="block-menu">
+                            <ul>
+                                <li><a href="#">Timeline<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">Friends<small class="text-secondary"
+                                            style="margin: 10px;">412</small></a></li>
+                                <li><a href="#"><i class="fa fa-image"></i>Photos</a></li>
+                                <li><a href="#"><i class="fa fa-lock"></i>Archieve</a></li>
+                                <li><a href="#">More<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 15px;">
+            <div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="padding: 20px; font-size:20px;"><b>
+                            <i class="fa fa-user" aria-hidden="true"></i>About</b>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-4 para">
+                                <div class="tab">
+                                    <button class="tablinks" onclick="openCity(event, 'work')"
+                                        id="defaultOpen">Work</button>
+                                    <button class="tablinks" onclick="openCity(event, 'graduation')">Graduation</button>
+                                    <button class="tablinks" onclick="openCity(event, 'school')">School</button>
+                                    <button class="tablinks" onclick="openCity(event, 'place')">Place</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                               <form action="profilePage.html">
+                                    <div id="work" class="tabcontent">
+                                            <h3>Work Detail:</h3>
+                                            <input type="text" name="work" id="company">
+                                            <input type="submit" onclick="myFunction1();" value="Update">
+                                        </div>
+                              
+
+                                <div id="graduation" class="tabcontent">
+                                    <h3>Graduation:</h3>
+                                    <input type="text" name="college" id="college">
+                                    <input type="submit"  onclick="myFunction2();" value="Update">
+                                </div>
+
+                                <div id="school" class="tabcontent">
+                                        <h3>School:</h3>
+                                        <input type="text" name="school" id="schl">
+                                        <input type="submit"  onclick="myFunction3();" value="Update">
+                                </div>
+                                <div id="place" class="tabcontent">
+                                        <h3>Currently living:</h3>
+                                        <input type="text" name="place" id="plc">
+                                        <input type="submit"  onclick="myFunction4();" value="Update">
+                                </div>
+                            </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- modal details -->
+    <!--  <div id="myModa5" class="modal fade">
+        <form action="profilePage.html" method="post">
+            <a href="profilePage.html"><button type="button" class="btn btn-primary" onclick="myFunction5();">Savechanges</button></a>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+        </form>
+    </div> -->
+
+</body>
+
+<!-- edit details content-->
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+
+</script>
+<script>
+    function myFunction1() {
+        var one = document.getElementById("company").value;
+        localStorage.setItem("test1", one);
+    }
+    function myFunction2() {
+        var two = document.getElementById("college").value;
+        localStorage.setItem("test2", two);
+    }
+    function myFunction3() {
+        var three = document.getElementById("schl").value;
+        localStorage.setItem("test3", three);
+    }
+    function myFunction4() {
+        var four = document.getElementById("plc").value;
+        localStorage.setItem("test4", four);
+    }
+
+
+</script>
+
+</html>

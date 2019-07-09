@@ -1,0 +1,566 @@
+body{
+    background-color: aliceblue;
+}
+
+/* NAV-BAR styles */
+.facebook {
+    display: flex;
+  }
+  li{
+      list-style-type: none;
+      margin: 5px;
+  }
+  
+  .facebook__search {
+    margin-right: auto;
+  }
+ 
+  .facebook {
+    border: 1px solid red;
+    height: 46px;
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid rgba(238,238,238 ,1);
+    border-radius: 5px;
+    background: rgba(59,89,153 ,1);
+    color: #fff;
+    font-size: 0.9em;
+    box-shadow: 5px 10px 20px -20px rgba(59,89,153 ,1);
+  }
+  .facebook li:not(:last-child):not(:first-child):not(.facebook__search) {
+    margin-right: 10px;
+  }
+  /* Facebook profile section */
+ 
+  .fb-profile-block {
+    margin: auto;
+    position: relative;
+    width: 100%;
+  }
+  .cover-container{
+      background-image: url("coverpic.jpg");
+  }
+  .fb-profile-block-thumb{
+    display: block;
+    height: 315px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+  }
+  .fb-profile-block-menu {
+    border: 1px solid #d3d6db;
+    border-radius: 0 0 3px 3px;
+  }
+  .profile-img a{
+      bottom: 15px;
+      box-shadow: none;
+      display: block;
+      left: 15px;
+      padding:1px;
+      position: absolute;
+      height: 160px;
+      width: 160px;
+      background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+      z-index:9;
+  }
+  .profile-img img {
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.07);
+    height:178px;
+    padding: 5px;
+    width:178px;
+    border-radius: 50%;
+  }
+  .profile-name {
+    bottom: 60px;
+    left: 200px;
+    position: absolute;
+  }
+  .profile-name h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    max-width: 275px;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .fb-profile-block-menu{
+    height: 44px;
+    position: relative;
+    width:100%;
+    overflow:hidden;
+   }
+  .block-menu {
+    clear: right;
+    padding-left: 205px;
+  }
+  .block-menu ul{
+      margin:0;
+      padding:0;
+  }
+  .block-menu ul li{
+      display:inline-block;
+  }
+  .block-menu ul li a {
+    border-right: 1px solid #e9eaed;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 42px;
+    line-height: 3.0;
+    padding: 0 17px;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+    color:rgba(41, 41, 170, 0.664);
+    text-transform:capitalize;
+  }
+  .block-menu ul li:first-child a{
+    border-left: 1px solid #e9eaed;
+  }
+
+  /* wtsapp today */
+  .m-mrg
+{
+    margin-bottom: 28px;
+}
+
+#composer
+{
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px 3px #ddd;
+}
+
+#c-tabs-cvr
+{
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ececec;
+}
+
+#c-tabs
+{
+    width: auto;
+    color: #919191;
+}
+
+#c-tabs .td
+{
+    position: relative;
+    width: 1px;
+    padding: 0px 15px;
+    white-space: pre;
+    cursor: pointer;
+}
+
+#c-tabs .td:after
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    width: 1px;
+    height: 12px;
+    margin-top: -6px;
+    background-color: #eaeaea;
+}
+
+#c-tabs .td:first-child
+{
+    padding-left: 0px;
+}
+
+#c-tabs .td:last-child
+{
+    padding-right: 0;
+}
+
+#c-tabs .td:last-child:after
+{
+    display: none;
+}
+
+#c-tabs .td span
+{
+    position: relative;
+}
+
+#c-tabs .td.active
+{
+    color: #373737;
+}
+
+#c-tabs .td.active span:after
+{
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -20px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid transparent;
+    border-color: transparent #ececec #ececec transparent;
+    margin: 0 auto;
+    background-color: #fff;
+    transform: rotateZ(45deg);
+}
+
+#c-tabs .td i
+{
+    font-size: 21px;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+#c-tabs .td span
+{
+    position: relative;
+    top: 1px;
+    font-size: 15px;
+}
+
+#c-c-main
+{
+    position: relative;
+    padding-top: 15px;
+}
+
+#p-c-i
+{
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#p-c-i img
+{
+    display: block;
+    width: 100%;
+}
+
+#c-inp
+{
+    padding-left: 20px;
+}
+
+#c-inp input
+{
+    width: 100%;
+    font-size: 20px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#c-c-main input::placeholder
+{
+    color: #666;
+}
+
+#insert_emoji
+{
+    position: absolute;
+    right: -2px;
+    bottom: -10px;
+    cursor: pointer;
+}
+
+#insert_emoji i
+{
+    display: block;
+    color: #ccced6;
+    font-size: 21px;
+}
+ ul.breadcrumb {
+  padding: 8px 16px;
+  list-style: none;
+  background-color: #eee;
+  
+}
+
+ul.breadcrumb li {display: inline;}
+ul a:link {
+  text-decoration: none;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "|";
+}
+i{
+    padding: 5px;
+} 
+
+/* post styles */
+a{
+    color:#47649F;
+}
+
+body{
+    font-family:'helvetica';    
+}
+/* button */
+.button {
+    background-color: rgb(209, 204, 204);
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40%;
+    width:150px;
+    height:50px;
+    margin-left: 10px;
+    color: rgba(41, 41, 170, 0.664);
+    
+  }
+  #l-col, #m-col, #r-col
+{
+    vertical-align: top;
+}
+
+#l-col
+{
+    width: 340px;
+    padding-top: 6px;
+}
+
+.l-cnt
+{
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px 3px #ddd;
+}
+
+.l-mrg
+{
+    margin-top: 28px;
+}
+.l-i
+{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 2px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
+#l-i-i
+{
+    background-image: url('https://imagizer.imageshack.com/img922/7749/C8tmwX.png');
+    background-position: 0 -87px;
+}
+
+#l-i-p
+{
+    background-image: url('https://imagizer.imageshack.com/img923/7847/sRapnM.png');
+    background-position: 0 0;
+}
+
+#l-i-k
+{
+    background-image: url('https://imagizer.imageshack.com/img922/5617/QpPVKn.png');
+}
+
+.cnt-label
+{
+    position: relative;
+    padding-right: 24px;
+    margin-bottom: 15px;
+}
+
+.cnt-label span
+{
+    position: relative;
+    top: 2px;
+    color: #707070;
+    font-size: 18px;
+}
+
+.lb-action
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.lb-action i
+{
+    display: block;
+    color: #ccc;
+    font-size: 18px;
+}
+
+#b-i i
+{
+    font-size: 24px;
+}
+
+#i-box
+{
+    color: #797979;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+#intro-line
+{
+    margin-top: 17px;
+}
+
+#u-occ
+{
+    margin: 10px 0px;
+}
+
+#u-occ a
+{
+    color: #2196f3;
+}
+
+#u-loc i
+{
+    color: #2196F3;
+    font-size: 16px;
+    margin-left: -3px;
+    margin-right: 2px;
+    margin-top: -1px;
+    vertical-align: middle;
+}
+
+#u-loc a
+{
+    position: relative;
+    top: 1px;
+    color: #2196F3;
+}
+
+#photos
+{
+    padding: 2px;
+    margin: 15px -20px -20px -20px;
+}
+
+#photos .td
+{
+    width: 33.333%;
+    height: 112px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    background-position: 50% 25%;
+    background-size: cover;
+}
+
+/* facebook post */
+.post{
+    display:block;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 2px;
+    margin-bottom:10px;
+}
+.profile-picture{
+    background-image:url(vdp.jpg);
+    width:50px;
+    height:50px;
+}
+.post-heading{
+    border-bottom:1px solid rgba(0,0,0,0.1);
+}
+.post-heading,.post-body{
+    padding:10px 5px;
+}
+.post-body div{
+    white-space: pre-wrap;
+}
+.post-user-name{
+    font-weight:bold;
+    font-family:cursive;
+    font-size:15px;
+}
+.post-action{
+    border-top:1px solid rgba(0,0,0,0.1);
+}
+.post-action-menu{
+    list-style: none;
+    padding:0px;
+}
+.post-action-menu li,
+.post-action-menu li a{
+    display:inline-block;
+}
+.post-action-menu li a {
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.post-action-menu li:not(.pull-right) a:hover{
+    color:#2d9a40;
+}
+
+/* edit details page */
+/* .vertical{
+    border-left: 2px solid gray;
+    height: 500px;
+}
+.para{
+    padding: 8px;
+    font-size: 16px;
+    font-style: bold;
+}
+.para :hover{
+    color: #2d9a40;
+    font-size: 22px;
+} */
+
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding:16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 70%;
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile Venky Reddy</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul class="facebook" role="navigation">
+            <li><a href="#"> <img src="facebook-icon.svg" alt="facebookdp" style="width: 40px;height:40px;"> </a></li>
+            <li class="facebook__search">
+                <form class="form-inline">
+                    <div class="input-group">
+                        <input type="text" class="form-control input-sm " placeholder="Search" name="search">
+                        <div class="input-group-btn prepend">
+                            <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </li>
+            <li><a href="#"> <img src="vdp.jpg" alt="facebookdp" style="width: 30px;height:30px;border-radius: 50%;">
+                </a></li>
+            <li>Home</li>
+            <li>Create</li>
+            <li>Notifications</li>
+            <li><i class="fa fa-caret-down"></i>More</li>
+            <li><a href="loginForm.html"><input type="button" value="logout"></a></li>
+            <li><a href=""><input type="button" value="Activity log"></a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="fb-profile-block">
+                    <div class="fb-profile-block-thumb cover-container"></div>
+                    <div class="profile-img">
+                        <a href="#">
+                            <img src="vdp.jpg" alt="dp" title="pfofilepic">
+                        </a>
+                    </div>
+                    <div class="profile-name">
+                        <h2>MR VENKY REDDY</h2>
+                    </div>
+
+                    <div class="fb-profile-block-menu">
+                        <div class="block-menu">
+                            <ul>
+                                <li><a href="#">Timeline<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">Friends<small class="text-secondary"
+                                            style="margin: 10px;">412</small></a></li>
+                                <li><a href="#"><i class="fa fa-image"></i>Photos</a></li>
+                                <li><a href="#"><i class="fa fa-lock"></i>Archieve</a></li>
+                                <li><a href="#">More<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <div class="container mt-3">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-sm-4">
+                <!-- introo nd details -->
+
+                <div class="td" id="l-col">
+                    <!-- intro -->
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="l-cnt">
+                                <div class="cnt-label">
+                                    <i class="l-i" id="l-i-i"></i>
+                                    <span>Intro</span>
+                                    <div class="lb-action"><i class="fa fa-pencil"></i></div>
+                                    <hr>
+                                </div>
+                                <div id="i-box">
+                                    <i class='fa fa-briefcase' style='font-size:20px'>Works at <a href="#"
+                                            style="font-size: 15px;"><b><span
+                                                    id="work">Neutrinos,Jayanagar</span></b></a></i>
+                                    <i class='fa fa-graduation-cap' style='font-size:20px'>Studied B.tech <a href="#"
+                                            style="font-size: 15px;"><b><span id="clg">DR MGR
+                                                    university</span></b></a></i>
+                                    <i class='fa fa-graduation-cap' style='font-size:20px'>School<a href="#"
+                                            style="font-size: 15px;"><b><span id="school">Sri Satyam High
+                                                    School</span></b></a></i>
+                                    <i class='fa fa-home' style='font-size:20px'>From <a href="#"
+                                            style="font-size: 15px;"><b><span
+                                                    id="place">Bangalore,India</span></b></a></i>
+                                    <hr>
+                                    <a href="EditDetails.html"><input type="submit" value="Edit"
+                                            style="transform: translate(70px);"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--person photos -->
+                    <div class="panel panel-default"
+                        style="margin-top: 20px;margin-bottom: 20px;box-shadow: 3px 3px 3px 3px #ddd;">
+                        <div class="panel-body">
+                            <div class="cnt-label">
+                                <i class="l-i" id="l-i-p"></i>
+                                <span>Photos</span>
+                                <div class="lb-action" id="b-i"><i class="material-icons"></i></div>
+                            </div>
+                            <hr>
+                            <div class="photos">
+                                <img src="vdp.jpg" class="img-thumbnail" style="width: 100px;height:100px;" alt="Photo">
+                                <img src="vdp.jpg" class="img-thumbnail" style="width: 100px;height:100px;" alt="Photo">
+                                <img src="vdp.jpg" class="img-thumbnail" style="width: 100px;height:100px;" alt="Photo">
+                                <img src="vdp.jpg" class="img-thumbnail" style="width: 100px;height:100px;" alt="Photo">
+                                <img src="vdp.jpg" class="img-thumbnail" style="width: 100px;height:100px;" alt="Photo">
+                                <img src="vdp.jpg" class="img-thumbnail" style="width: 100px;height:100px;" alt="Photo">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- left 3rd -->
+                    <div class="l-cnt l-mrg">
+                        <div class="cnt-label">
+                            <i class="l-i" id="l-i-k"></i>
+                            <span>Did You Know<i id="k-nm">1</i></span>
+                        </div>
+                        <div>
+                            <div class="q-ad-c">
+                                <a href="#" class="q-ad">
+                                    <img src="https://imagizer.imageshack.com/img923/1849/4TnLy1.png">
+                                    <span>My favorite place is...</span>
+                                </a>
+                            </div>
+                            <div class="q-ad-c">
+                                <a href="#" class="q-ad" id="add_q">
+                                    <span>Gues Answer</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end left -->
+
+                </div>
+            </div>
+            <!-- right column -->
+            <div class="col-sm-8">
+                <div>
+                    <div class="m-mrg" id="composer">
+                        <div id="c-tabs-cvr">
+                            <ul class="breadcrumb">
+                                <li><a href="#"><i class="fa fa-pencil" aria-hidden="true"></i>Create Post</a></li>
+                                <li><a href="#"><i class="fa fa-camera" aria-hidden="true"></i>Photo/video</a></li>
+                                <li><a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i>Live Video</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-flag" aria-hidden="true"></i>Life Event</a> </li>
+                            </ul>
+                        </div>
+                        <div id="c-c-main">
+                            <div class="tb">
+                                <div class="td" id="p-c-i"><img src="vdp.jpg" alt="Profile pic">
+                                </div>
+                                <div class="td" id="c-inp">
+                                    <input type="text" placeholder="What's on your mind?">
+                                </div>
+                            </div>
+                            <div id="insert_emoji"><i class="fa fa-smile-o" style="color: gold;"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 1st post -->
+                <div class="post col-sm-12" id="post_5">
+                    <div class="row post-heading">
+                        <div class="col-sm-12">
+                            <a href="profile.html">
+                                <img src="vdp.jpg" style="border-radius: 50%" class="profile-picture pull-left" />
+                                &nbsp;
+                                <span class="post-user-name">Venky Reddy</span><small class="text-secondary"
+                                    style="margin: 10px;">posted a picture</small> <br />
+                                &nbsp;
+                                <small class="post-date text-mute">5th july, 2019 2:49PM</small>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row post-body">
+                        <div class="col-sm-12">
+                            <img src="tree.jpg" alt="tree-post">
+                        </div>
+                    </div>
+                    <div class="row post-action">
+                        <ul class="post-action-menu">
+                            <li><a href="javascript:void(0);" class="text-mute"><i class="fa fa-thumbs-up"
+                                        aria-hidden="true"></i>Like</a></li>
+                            <li><a href="javascript:void(0);" class="text-mute"><i class="fa fa-share"
+                                        aria-hidden="true"></i>Share</a></li>
+                            <li><a href="javascript:void(0);" class="text-mute"><i class="fa fa-comments-o"
+                                        aria-hidden="true"></i>Comment</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 2nd post -->
+                <div class="post col-sm-12" id="post_5">
+                    <div class="row post-heading">
+                        <div class="col-sm-12">
+                            <a href="profile.html">
+                                <img src="vdp.jpg" style="border-radius: 50%" class="profile-picture pull-left" />
+                                &nbsp;
+                                <span class="post-user-name">Venky Reddy</span><small class="text-secondary"
+                                    style="margin: 10px;">posted a picture</small><br />
+                                &nbsp;
+                                <small class="post-date text-mute">30th june, 2019 3:49PM</small>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row post-body">
+                        <div class="col-sm-12">
+                            <img class="responsive" src="postimage.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="row post-action">
+                        <ul class="post-action-menu">
+                            <li><a href="javascript:void(0);" class="text-mute"><i class="fa fa-thumbs-up"
+                                        aria-hidden="true"></i>Like</a></li>
+                            <li><a href="javascript:void(0);" class="text-mute"><i class="fa fa-share"
+                                        aria-hidden="true"></i>Share</a></li>
+                            <li><a href="javascript:void(0);" class="text-mute"><i class="fa fa-comments-o"
+                                        aria-hidden="true"></i>Comment</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+</body>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script> -->
+<script>
+    var det1 = localStorage.getItem("test1");
+    document.getElementById("work").innerHTML = det1;
+
+    var det2 = localStorage.getItem("test2");
+    document.getElementById("clg").innerHTML = det2;
+
+    var det3 = localStorage.getItem("test3");
+    document.getElementById("school").innerHTML = det3;
+
+    var det4 = localStorage.getItem("test4");
+    document.getElementById("place").innerHTML = det4;
+
+</script>
+
+</html>
